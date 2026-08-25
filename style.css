@@ -1,0 +1,77 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+#controls {
+    margin: 20px;
+}
+
+#controls input {
+    width: 60px;
+    font-size: 18px;
+}
+
+#startBtn {
+    padding: 10px 20px;
+    font-size: 20px;
+    background: #28a745;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#videoGallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#exerciseVideo {
+    width: 260px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+#circleContainer {
+    position: relative;
+    width: 200px;
+    margin: 20px auto;
+}
+
+#progressRing circle {
+    fill: none;
+    stroke-width: 12;
+}
+
+#ringBg {
+    stroke: #333;
+}
+
+#ring {
+    stroke: #00ff88;
+    stroke-dasharray: 565;
+    stroke-dashoffset: 565;
+    transition: stroke-dashoffset 1s linear;
+}
+
+#countdownText {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+}
